@@ -1,0 +1,479 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@200;600&display=swap');
+
+* {
+    box-sizing: border-box;  
+    font-family: 'Hepta Slab', serif;
+    margin:0;
+    padding:0;
+    cursor: url('../images/kredka.png'), auto;
+}
+
+body {
+    width: 1240px;
+    font-weight: 600;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* 
+
+section01 
+
+*/
+
+section#section01 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+section#section01 > .background01 {
+    background-color: #28a1aa;
+    position: relative;
+    width: 100%;
+}
+
+section#section01 > .background01 > .div01_bts {
+    position: absolute;
+    width: 100%;
+    display: none;
+}   
+
+.bts_show {
+    animation: slide_down 0.8s ease-in, bounce 1s 0.7s linear;
+    display: block !important;
+}
+
+section#section01 > .background01 > .div01_bts > .net01 {
+    position: absolute; 
+    width: 346px;
+    height: 161px;
+    top: 220px;
+    left: 80px;
+}   
+
+section#section01 > .background01 > .div01_bts > .text01 {
+    position: absolute;
+    color: #f3e261;
+    font-size: 65px;
+    line-height: 60px;
+    top: 230px;
+    left: 50px;
+}   
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 60px;
+}   
+  
+.buttons > button {
+    background-color: #252d33;
+    border: 1px solid transparent;
+    color: white;
+    text-transform: uppercase;
+    width: 240px;
+    height: 43px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px;
+}   
+
+.buttons > button:hover {
+    background-color: #f3e261;
+}   
+
+section#section01 > .background01 > .div01_aw21 {
+    color: #f3e261;
+    font-size: 20px;
+    font-weight: 200;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 370px;
+    right: 0px;
+}
+
+
+/* 
+
+section02
+
+*/
+
+section#section02 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 160px;
+    position: relative;
+}
+
+section#section02::before {
+    content: '';
+    position: absolute;
+    top: 361px;
+    z-index: -1;
+    width: 100%;
+    height: 675px;
+    background-color: #28a1aa;
+}
+
+
+section#section02 > .img02 {
+    margin-left: 115px;
+}
+
+section#section02 > .net02 {
+    margin-top: 255px;
+    width: 55px;
+    height: 161px;
+}
+
+section#section02 > .text02 {
+    color: #283684;
+    font-size: 22px;
+    margin: 250px 170px 0px 30px;
+    display: none;
+}
+
+.showText_right {
+    animation: showRight 1s ease-in-out;
+    display: block !important
+}
+
+.showText_left {
+    animation: showLeft 1s ease-in-out;
+    display: block !important
+}
+
+
+/* 
+
+section03
+
+*/
+
+section#section03 {
+    padding-top: 390px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 1460px;
+}
+
+section#section03 > .left_s03 {
+    margin-left: 130px;
+}
+
+section#section03 > .left_s03 > .carousel_div {
+    overflow: hidden;
+    width: 543px;
+}
+
+section#section03 > .left_s03 > .carousel_div > .carousel_slide {
+    display: flex;
+    flex-direction: row;
+    width: 543px;
+}
+
+section#section03 > .left_s03 > .left_s03_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+
+section#section03 > .left_s03 > .left_s03_buttons > .left_s03_button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ffc313;
+    opacity: 0.5;
+    margin: 40px 12px;
+}
+
+section#section03 > .left_s03 > .left_s03_buttons > .left_s03_button:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1 !important;
+}
+
+
+section#section03 > .right_s03 {
+    margin-top: 170px;
+    position: relative;
+}
+
+section#section03 > .right_s03 > p {
+    text-align: center;    
+    margin: 0px 80px;
+    font-size: 17px;
+}
+
+section#section03 > .right_s03 > .right_text03 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#section03 > .right_s03 > .dopasowane {
+    top: 145px;
+    left: 65px;
+}
+section#section03 > .right_s03 > .wygodne {
+    top: 200px;
+    left: 310px;
+}
+section#section03 > .right_s03 > .wytrzymałe {
+    top: 330px;
+    left: 155px;
+}
+
+section#section03 > .right_s03 > .right_text03 > h3 {
+    text-transform: uppercase;
+    font-size: 17px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 165px;
+}
+section#section03 > .right_s03 > .right_text03 > h3::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    height: 14px;
+    width: 100%;
+    background-color: #f3e261;
+    z-index: -1;
+}
+
+section#section03 > .right_s03 > .right_text03 > p {
+    font-size: 15px;
+    text-align: center;
+}
+
+section#section03 > .big_letter {
+    position: absolute;
+    width: auto;
+    
+}
+
+section#section03 > #letter1 {
+    top: 1245px;
+    right: 190px;
+    display: none;
+}
+
+section#section03 > #letter2 {
+    top: 70px;
+    right: 145px;
+    display: none;
+}
+
+section#section03 > #letter7 {
+    top: 485px;
+    left: 0px;
+    display: none;
+}
+
+
+
+/* 
+
+section04
+
+*/
+
+section#section04 > .top04 {
+    padding-bottom: 155px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: relative;
+}
+
+section#section04 > .top04::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 995px;
+    height: 100%;
+    background-color: #28a1aa;
+}
+
+section#section04 > .bottom04 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+section#section04 > .bottom04 > .images_container04 {
+    width: 1240px;
+    overflow: hidden;
+
+}
+
+section#section04 > .bottom04 > .slide_container04 {
+    position: relative;
+    width: 430px;
+    height: 20px;
+    background-color: #ffecb3;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+
+section#section04 > .bottom04 > .slide_container04 > .slide_button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f4c021;
+    position: absolute;
+    top: -15px;
+    left: 0px;
+}
+
+
+/* 
+
+section05
+
+*/
+
+
+
+section#section05 {
+    width: 100%;
+    position: relative;
+    padding: 0px 80px;
+}
+
+section#section05::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 330px;
+    z-index: -1;
+    width: 100%;
+    height: calc(100% - 330px);
+    background-color: #28a1aa; 
+}
+
+section#section05 > .images05 > img {
+    display: block;
+}
+
+section#section05 > .images05 > .images05_bottom {
+    position: relative;
+}
+
+section#section05 > .images05 > .images05_bottom img:nth-child(2) {
+    margin-left: 135px;
+    margin-bottom: 108px;
+}
+
+
+
+section#section05 > .images05 > .images05_bottom > .net03 {
+    position: absolute;
+    left: 497px;
+    z-index: -1;
+}
+
+
+section#section05 > .bottom05 > .left_container05 {
+    margin: 160px 80px 0px 80px;
+    padding-bottom: 60px;
+    width: 340px;
+}
+
+section#section05 > .bottom05 > .left_container05 > h1 {
+    font-size: 45px;
+    color: #f3e261;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#canvas {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: black;
+}
+
+
+@keyframes bounce {
+    0%, 40%, 75%, to {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-30px)
+    }
+    57% {
+        transform: translateY(-15px)
+    }
+    90% {
+        transform: translateY(-4px)
+    }
+}
+
+@keyframes showRight {
+    from {
+        transform: translateX(500px);
+    }
+    to {
+        transform: translateX(0px)
+    }
+}
+
+
+@keyframes showLeft {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(0px)
+    }
+}
+
+@keyframes slide_down {
+    from {
+        top:-500px;
+    }
+    to {
+        top: 0px;
+    }
+
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-2px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(3px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-5px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(5px, 0, 0);
+    }
+  }
